@@ -2,7 +2,7 @@
 
 .starter{
     background-color: var(--color-primary-variant);
-height: 500px;
+max-height: 500px;
     border-radius: 0% 0% 30% 30%;
 }
 
@@ -156,7 +156,7 @@ top: 0%;
 
 @include media('<=tablet'){
     .starter{
-        height: 350px;
+       max-height:  350px;
     }
     .download{
         padding-left: 130px;
@@ -186,7 +186,7 @@ left: 0%;
 }
 @include media('>tablet','<=desktop') {
     .starter{
-        height: 400px;
+        max-height: 400px;
 
     }
     .images{

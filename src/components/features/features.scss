@@ -150,7 +150,7 @@ margin-top: 32vh;
                 grid-template-columns: 1fr;
                 gap: 0;
                 .image{
-                width: 120%;
+                max-width: 120%;
                     margin-top: 2.55rem;
                     left: 14.5%;
                 }
@@ -164,7 +164,7 @@ margin-top: 32vh;
             grid-template-columns: 1fr;
                 gap: 0;
                 .image2{
-                    width: 130%;
+                   max-width: 130%;
     margin-top: 30vh;
                     left: 12%;
                 }
