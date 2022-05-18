@@ -4,6 +4,7 @@
     background-color: var(--color-primary-variant);
 max-height: 500px;
     border-radius: 0% 0% 30% 30%;
+    
 }
 
 
@@ -15,7 +16,9 @@ justify-content: center;
 }
 
 .download{
-    padding-left: 170px;
+    padding-left: 10rem;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     color: var(--color-bg);
     font-size: 20px;
