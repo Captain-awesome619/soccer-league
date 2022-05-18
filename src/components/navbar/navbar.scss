@@ -1,0 +1,57 @@
+@import '../../breakpointsss//breakpoint.scss';
+
+.navbar{
+    margin: 0rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .collapseble-button {
+      display: none;
+    }
+
+    .links > ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        margin: 1.3rem 2rem;
+        gap: 2rem;
+
+    }
+
+    @include media ('<=phone'){
+        .links{
+            gap: 1rem;
+            margin: 1rem 1rem;
+        }
+    }
+
+    @media screen and (max-width: 740px){
+.links >ul{
+    gap: 0.5em;
+    margin-right: 4px;
+
+}
+.btn{
+    padding: 10px;
+}
+.col{
+margin-left: 0px;
+}
+
+@media screen and (max-width: 1024px){
+    .btn{
+        padding: 5px;
+
+
+}
+
+    }
+}

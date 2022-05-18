@@ -1,0 +1,17 @@
+.brand{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+
+span {
+    text-transform: uppercase;
+    font-size: xx-large;
+    border: 0.1rem solid var(--color-bg-variant);
+    border-radius: 0.3rem;
+    color: var(--color-bg);
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+    padding: 10px;
+  }

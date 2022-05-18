@@ -1,0 +1,209 @@
+@import "../../breakpointsss/breakpoint.scss";
+
+.starter{
+    background-color: var(--color-primary-variant);
+   /* position: relative; */
+    height: 500px;
+    border-radius: 0% 0% 30% 30%;
+}
+
+
+.stat{
+display: grid;
+align-items: center;
+justify-content: center;
+
+}
+
+.download{
+    padding-left: 170px;
+    font-weight: bold;
+    color: var(--color-bg);
+    font-size: 20px;
+    margin: 0.5rem;
+}
+.super{
+    padding-right: 10px;
+    font-weight: bold;
+    color: var(--color-bg);
+    font-size: 40px;
+    margin: 1rem;
+}
+
+.btns1{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.4rem 0rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btns1:hover{
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border-color: transparent;
+}
+
+.form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.input1{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.4rem 0rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+::placeholder{
+    color: var(--color-primary);
+}
+.btns2{
+    background-color: orange;
+    width: max-content;
+    display: inline-block;
+    color: var(--color-bg);
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-bg);
+    transition: var(--transition);
+}
+.btns2:hover{
+    background-color: transparent;
+}
+
+.images{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+position: relative;
+    .player{
+
+        padding-top: 0rem;
+position: relative;
+    }
+    .phone{
+        padding-top: 3rem;
+
+position: relative;
+    }
+}
+    .ctaa{
+display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+top: 0%;
+        left: 0%;
+        padding: 0rem;
+
+    }
+        .button1{
+
+            display: inline-block;
+    color: var(--color-bg);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    margin-right: 0.5rem;
+    align-items: center;
+    justify-content: center;
+        }
+        .button2{
+
+            width: max-content;
+    display: inline-block;
+    color: var(--color-bg);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+    align-items: center;
+    justify-content: center;
+        }
+         .button1:hover{
+            background: var(--color-primary);
+            color: var(--color-bg);
+            border-color: transparent;
+        }
+        .button2:hover{
+            background: var(--color-primary);
+            color: var(--color-bg);
+            border-color: transparent;
+        }
+
+
+
+
+
+
+
+
+
+
+@include media('<=tablet'){
+    .starter{
+        height: 350px;
+    }
+    .download{
+        padding-left: 130px;
+    }
+    .super{
+        font-size: 30px;
+margin: 0rem;
+    }
+.player{
+    display: none;
+}
+
+
+.phone{
+    margin-top: 1.0rem;
+    transform: scale(1.2);
+left: 23%;
+padding-bottom: 0rem;
+margin-bottom: 0rem;
+}
+.ctaa{
+    top: 0%;
+left: 0%;
+}
+
+
+}
+@include media('>tablet','<=desktop') {
+    .starter{
+        height: 400px;
+    }
+    .images{
+margin-top: 2rem;
+        transform: scale(1.4);
+        margin-left: 4rem;
+        .player{
+top: 0%;
+left: 7%;
+        }
+        .phone{
+            margin-top: 1rem;
+            padding: 0rem;
+left: 0%;
+        }
+    }
+    .ctaa{
+        left: 3%;
+    }
+}
