@@ -20,9 +20,7 @@ return(
 <div className='section'>
 <div className='section1'>
 </div>
-<div className='image'>
-<img src={phone} alt=''/>
-</div>
+
 
 <div className='text'>
         <div className='header'><h2>Many cups and leagues</h2></div>
@@ -60,10 +58,8 @@ return(
         <div className='section2'>
         </div>
 
-        <div className='image2'>
-<img src={phone2} alt=''/>
-        </div>
-        
+
+
 </div>
 
 

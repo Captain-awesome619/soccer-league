@@ -18,14 +18,7 @@ background-position: bottom;
     display: grid;
 
 }
-.image{
 
-max-width: 100%;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: absolute;
-    left: 1%;
-}
 .text{
     margin: auto;
     justify-content: center;
@@ -80,19 +73,9 @@ left: 55%;
     border-radius: 2rem;
     background-image: url('../../assets/stadium.jpg');
 background-position: bottom;
-    display: grid;
+    
 }
 
-.image2{
-    align-items: center;
-    justify-content: center;
-padding-top: 7rem;
-    max-width: 100%;
-    border-radius: 2rem;
-    overflow: hidden;
-    position:absolute;
-    left: 35.5%;
-}
 
 
 
@@ -118,16 +101,11 @@ padding-top: 7rem;
             }
     }
 
-
     .features{
         margin-top: 3rem;
         grid-template-columns: 1fr;
             gap: 0;
-            .image2{
-                width: 130%;
-margin-top: 32vh;
-                left: 12%;
-            }
+
             .feat{
                 margin-right: 15rem;
             }
@@ -149,11 +127,6 @@ margin-top: 32vh;
 
                 grid-template-columns: 1fr;
                 gap: 0;
-                .image{
-                max-width: 120%;
-                    margin-top: 2.55rem;
-                    left: 14.5%;
-                }
                 .text{
                     left: 1%;
                 }
@@ -163,16 +136,11 @@ margin-top: 32vh;
             margin-top: 3rem;
             grid-template-columns: 1fr;
                 gap: 0;
-                .image2{
-                   max-width: 130%;
-    margin-top: 30vh;
-                    left: 12%;
-                }
-                .feat{
-                    margin-right: 19rem;
-                }
+
+
                 .section2{
                     left: 0%;
+
                 }
         }
 

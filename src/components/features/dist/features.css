@@ -1,0 +1,136 @@
+/**
+*
+* Testing
+*
+**/
+.section {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  gap: 5%;
+}
+
+.section1 {
+  position: relative;
+  top: 33%;
+  left: 30%;
+  height: 55%;
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background-image: url("../../assets/stadium.jpg");
+  background-position: bottom;
+  display: grid;
+}
+
+.text {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: relative;
+  right: 70%;
+}
+
+.text .header {
+  color: var(--color-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text .items {
+  display: flex;
+}
+
+.text .icon {
+  margin-right: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 5%;
+  margin-top: 6rem;
+  place-items: center;
+}
+
+.features .feat {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.features .outline {
+  position: relative;
+  left: 55%;
+}
+
+.features .outline > h2 {
+  color: var(--color-primary);
+}
+
+.section2 {
+  position: relative;
+  top: 20%;
+  left: 0%;
+  height: 55%;
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background-image: url("../../assets/stadium.jpg");
+  background-position: bottom;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-top: 4rem;
+  }
+  .section {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .section .image {
+    width: 120%;
+    margin-top: 3.5vh;
+    left: 14.5%;
+  }
+  .section .text {
+    left: 4%;
+  }
+  .features {
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .features .feat {
+    margin-right: 15rem;
+  }
+  .features .section2 {
+    left: 0%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+  section {
+    margin-top: 4rem;
+  }
+  .section {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .section .text {
+    left: 1%;
+  }
+  .features {
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .features .section2 {
+    left: 0%;
+  }
+}
+
+/*# sourceMappingURL=features.css.map */
