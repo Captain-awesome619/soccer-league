@@ -1,9 +1,10 @@
 @import '../../breakpointsss//breakpoint.scss';
 
 .navbar{
-    margin: 0rem 0;
+    
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 .col {
@@ -23,6 +24,7 @@
         justify-content: center;
         margin: 1.3rem 2rem;
         gap: 2rem;
+        padding-left: 0;
 
     }
 

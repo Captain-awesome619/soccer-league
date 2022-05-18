@@ -2,8 +2,7 @@
 
 .starter{
     background-color: var(--color-primary-variant);
-   /* position: relative; */
-    height: 500px;
+height: 500px;
     border-radius: 0% 0% 30% 30%;
 }
 
@@ -188,6 +187,7 @@ left: 0%;
 @include media('>tablet','<=desktop') {
     .starter{
         height: 400px;
+
     }
     .images{
 margin-top: 2rem;
