@@ -1,79 +1,81 @@
 @import '../../breakpointsss//breakpoint.scss';
 
-.section{
+.container{
     display: grid;
-    grid-template-columns: 60% 30%;
-    gap: 5%;
 }
+
 .section1{
-position: relative;
-    top: 33%;
-    left: 30%;
-    height: 55%;
-    width: 30%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background-image: url('../../assets/stadium.jpg');
-background-position: bottom;
     display: grid;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+grid-template-columns: 1fr 1fr;
 
 }
 
-.text{
-    margin: auto;
-    justify-content: center;
-align-items: center;
-    display: grid;
-    position: relative;
-    right: 70%;
+.text{margin-top: 3rem;
 
-    .header{
-        color: var(--color-primary);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
+    display: grid;
+    justify-content: space-around;
+
+    position: relative;
+right: 30%;
+
+}
+.header{
+padding-bottom: 1rem;
+
+margin: 0rem;
+color: var(--color-primary);
+}
 .items{
-    display: flex;
-
+line-height: 2.0rem;
 }
+.image1{
+    top: 5%;
+transform: scale(1.7);
+position: relative;
+align-items: center;
+justify-content: center;
+left: 43%;
+}
+
 .icon{
-    margin-right: 0.4rem;
-    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+    margin-top: 0.6rem;
 }
-}
-.features{
-    display: grid;
-    grid-template-columns: 30% 60%;
-    gap: 5%;
-    margin-top: 6rem;
-    place-items: center;
 
-.feat{
-    position: relative;
+.section2{
     display: grid;
-    gap: 1rem;
     align-items: center;
     justify-content: center;
+    position: relative;
+ grid-template-columns: 1fr 1fr;
+ 
 }
-.outline{
+
+.feat{
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+    position: relative;
+left: 15%;
+}
+
+.image2{
+    top: 15%;
+transform: scale(1.7);
 position: relative;
-left: 55%;
+right: 2%;
 }
-.outline>h2{
+.outline >h2{
     color: var(--color-primary);
 }
-}
-.section2{
-    position: relative;
-    top: 20%;
-    left: 0%;
-    height: 55%;
-    width: 30%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background-image: url('../../assets/stadium.jpg');
-background-position: bottom;
-    
+.initial{
+    display: none;
+    transform: scale(1.7);
+position: relative;
+
 }
 
 
@@ -82,68 +84,94 @@ background-position: bottom;
 
 
 
-@include media ('<=tablet'){
 
-    section{
-        margin-top: 4rem;
+
+
+
+
+
+
+
+
+
+
+
+@include media('<=tablet'){
+    .title{
+        margin-bottom: 1.5rem;
+        padding-bottom: 0rem;
     }
-    .section{
-
-            grid-template-columns: 1fr;
-            gap: 0;
-            .image{
-            width: 120%;
-                margin-top: 3.5vh;
-                left: 14.5%;
-            }
-            .text{
-                left: 4%;
-            }
-    }
-
-    .features{
-        margin-top: 3rem;
+    .section1{
         grid-template-columns: 1fr;
-            gap: 0;
+        left: 0%;
+        margin-right: 3rem;
+        .image1{
+            left: 32%;
 
-            .feat{
-                margin-right: 15rem;
+        }
+        .text{
+            left: 10%;
+            margin-top: 0;
+            top: 0%;
+            .header{
+                font-size: larger;
+                margin-top: 2rem;
             }
-            .section2{
-                left: 0%;
-            }
+        }
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        left: 0%;
+        margin-right: 1.5rem;
+        .image2{
+            display: none;
+        }
+        .initial{
+            display:flex;
+            margin-top: 2.5rem;
+            left: 30%;
+        }
+        .feat{
+            margin-top: 1rem;
+        }
     }
 }
-
-
-
-
-    @include media('>tablet','<=desktop'){
-
-        section{
-            margin-top: 4rem;
-        }
-        .section{
-
-                grid-template-columns: 1fr;
-                gap: 0;
-                .text{
-                    left: 1%;
-                }
-        }
-
-        .features{
+    @include media('>tablet', '<=desktop'){
+    .section1{
+        grid-template-columns: 1fr;
+        padding-right: 3rem;
+        .image1{
             margin-top: 3rem;
-            grid-template-columns: 1fr;
-                gap: 0;
+            margin-bottom: 1rem;
+    padding-right: 7rem;
 
-
-                .section2{
-                    left: 0%;
-
-                }
         }
-
+        .text{
+            left: 10%;
+            margin-top: 0;
+            top: 0%;
+            .header{
+                font-size: 25px;
+            }
+        }
 
     }
-
+    .section2{
+        grid-template-columns: 1fr;
+        padding-right: 3rem;
+    }
+    .image2{
+        display: none;
+    }
+    .initial{
+        display: flex;
+        margin-top: 3.5rem;
+        left: 32%;
+        transform: scale(1.5);
+    }
+    .feat{
+        padding-top: 0rem;
+        margin-top: 0rem;
+        padding-left: 1rem;
+    }
+}

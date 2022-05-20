@@ -1,7 +1,7 @@
 import React from 'react'
 import "../features/features.scss"
 import Title from '../Title/Title';
-import phone from "../../assets/phoneimage3.png"
+import phone1 from "../../assets/projectimage12.png"
 import {SiPremierleague} from 'react-icons/si'
 import {GiTrophy, GiLaurelsTrophy} from 'react-icons/gi'
 import {AiFillTrophy} from 'react-icons/ai'
@@ -15,15 +15,16 @@ function Features(){
 return(
 <section>
 <div className='title'>
-<Title />
+<Title  />
 </div>
-<div className='section'>
+<div className='container'>
 <div className='section1'>
+<div className='image1'>
+    <img src={phone1}/>
 </div>
-
 
 <div className='text'>
-        <div className='header'><h2>Many cups and leagues</h2></div>
+<h2 className='header'>Many cups and leagues</h2>
 <div className='items'>
 <SiPremierleague className='icon'/>Premier league</div>
 <div className='items'>
@@ -40,7 +41,10 @@ return(
 </div>
 
 </div>
-<div className='features'>
+<div className='section2'>
+        <div className='initial'>
+                <img src={phone1} />
+        </div>
         <div className='feat'>
 <div className='outline'>
         <h2>Own Team</h2>
@@ -52,16 +56,17 @@ return(
 </div>
 <div className='outline'>
         <h2>Real time play</h2>
-        Compete against friends far and wid and win
+        Compete against friends far and wide and win
 </div>
         </div>
-        <div className='section2'>
+        <div className='image2'>
+                <img src={phone1} />
         </div>
 
 
 
 </div>
-
+</div>
 
 
 

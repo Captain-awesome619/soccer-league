@@ -1,38 +1,46 @@
 @import '../../breakpointsss/breakpoint.scss';
+
 .title{ display: grid;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
 }
 
 
 .header{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    font-size: large;
-    color: var(--color-bg);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  color: var(--color-bg);
 }
 
 .line{
 align-items: center;
 justify-content: center;
-    border-radius: 1rem;
-    height: 7px;
-    width: 10rem;
-    background-color:  var(--color-primary);
-    content: "";
-    margin-left: 5rem;
+  border-radius: 1rem;
+  height: 7px;
+  width: 10rem;
+  background-color:  var(--color-primary);
+  content: "";
+  margin-left: 5rem;
 }
 
 @include media ('<=tablet'){
-    .header{
-        font-weight: bold;
-        font-size: medium;
-    }
-    .line{
-        margin-left: 5rem;
-    }
+
+
+  .header{
+      font-weight: bold;
+      font-size: medium;
+      padding: 0rem;
+
+.over{
+margin-left: 2rem;
+}
+  .line{
+      margin-left: 2rem;
+  }
+}
 }
