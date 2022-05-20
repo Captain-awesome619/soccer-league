@@ -7,13 +7,13 @@
 }
 
 
-.header{
+.awesome{
   display: grid;
   align-items: center;
   justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-  font-size: large;
+
+  font-size: 40px;
   color: var(--color-bg);
 }
 
@@ -25,20 +25,16 @@ justify-content: center;
   width: 10rem;
   background-color:  var(--color-primary);
   content: "";
-  margin-left: 5rem;
+  margin-left:5rem;
 }
 
 @include media ('<=tablet'){
+  .awesome{
+    margin-left: 2rem;
+.awesome >a{
 
-
-  .header{
-      font-weight: bold;
-      font-size: medium;
-      padding: 0rem;
-
-.over{
-margin-left: 2rem;
 }
+
   .line{
       margin-left: 2rem;
   }

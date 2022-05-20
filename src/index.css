@@ -77,13 +77,8 @@ section > h2{
 .text-light{
     color: var(--color-light);
 }
-a{
-    color: var(--color-primary);
-    transition: var(--transition)
-}
-a:hover{
-    color: var(--color-bg);
-}
+
+
 .btn{
     width: max-content;
     display: inline-block;
