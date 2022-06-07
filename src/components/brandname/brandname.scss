@@ -1,6 +1,9 @@
+@import '../../breakpointsss//breakpoint.scss';
+
 .brand{
+    position: relative;
     cursor: pointer;
-    margin-left: 30px;
+   left: 35%;
     margin-top: 10px;
 }
 
@@ -15,3 +18,16 @@ span {
     letter-spacing: 0.1rem;
     padding: 10px;
   }
+
+
+
+
+
+@include media ('<=tablet'){
+    .brand{
+left: 5%;
+    }
+}
+
+
+

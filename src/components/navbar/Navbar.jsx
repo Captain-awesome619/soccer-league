@@ -10,17 +10,27 @@ import { MdClose } from "react-icons/md";
 
 
  function Navbar() {
+  const [toggleNavbar, setToggleNavbar] = useState(false);
+  const navbarToggler = () => {
+    setToggleNavbar(!toggleNavbar);
+  };
+
+
 
 return(
   <div className='navbar'>
+ 
+
  <div className="col">
         <BrandName />
         </div>
 
         <div className="collapseble-button">
-
-
-
+        {!toggleNavbar ? (
+            <GiHamburgerMenu onClick={navbarToggler} />
+          ) : (
+            <MdClose onClick={navbarToggler} />
+          )}
 </div>
 
 <nav>

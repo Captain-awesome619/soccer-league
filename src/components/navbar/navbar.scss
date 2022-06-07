@@ -1,10 +1,10 @@
 @import '../../breakpointsss//breakpoint.scss';
 
 .navbar{
-    
     display: flex;
     justify-content: space-between;
     padding: 0;
+
 }
 
 .col {
@@ -46,14 +46,23 @@
 }
 .col{
 margin-left: 0px;
+.collapseble-button {
+    display: block;
+    font-size: 4rem;
+  }
 }
-
+    }
 @media screen and (max-width: 1024px){
     .btn{
         padding: 5px;
-
-
 }
+
+.col{
+    margin-left: 0px;
+    .collapseble-button {
+        display: block;
+        font-size: 4rem;
+      }
+    }
 
     }
-}
