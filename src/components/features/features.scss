@@ -51,7 +51,7 @@ left: 43%;
     justify-content: center;
     position: relative;
  grid-template-columns: 1fr 1fr;
- 
+
 }
 
 .feat{
@@ -97,6 +97,9 @@ position: relative;
 
 
 @include media('<=tablet'){
+    .sec{
+        margin-top: 1rem;
+    }
     .title{
         margin-bottom: 1.5rem;
         padding-bottom: 0rem;

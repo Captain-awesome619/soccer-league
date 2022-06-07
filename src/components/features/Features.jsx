@@ -13,7 +13,7 @@ import phone2 from '../../assets/phoneimage1.png'
 
 function Features(){
 return(
-<section>
+<section className='sec'>
 <div className='title'>
 <Title  />
 </div>
