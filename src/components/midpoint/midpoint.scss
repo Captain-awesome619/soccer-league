@@ -1,0 +1,110 @@
+@import "../../breakpointsss/breakpoint.scss";
+
+
+.contain{
+margin-top: 2rem;
+    background-color: var(--color-primary-variant);
+
+}
+
+.stat2{
+    margin-bottom: 2rem;
+}
+
+
+.stat2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    .download2{
+        padding-left: 15rem;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: var(--color-bg);
+        font-size: 25px;
+        margin: 0.5rem;
+    }
+    .super2{
+        padding-right: 10px;
+        font-weight: bold;
+        color: var(--color-bg);
+        font-size: 20px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .btns1b{
+        width: max-content;
+        display: inline-block;
+        color: var(--color-primary);
+        padding: 0.4rem 0rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        border: 1px solid var(--color-primary);
+        transition: var(--transition);
+    }
+
+    .btns1b:hover{
+        background: var(--color-primary);
+        color: var(--color-bg);
+        border-color: transparent;
+    }
+
+    .form2{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .input1b{
+        width: max-content;
+        display: inline-block;
+        color: var(--color-primary);
+        padding: 0.4rem 0rem;
+        border-radius: 0.4rem;
+        border: 1px solid var(--color-primary);
+        transition: var(--transition);
+    }
+    ::placeholder{
+        color: var(--color-primary);
+    }
+    .btns2b{
+        background-color: orange;
+        width: max-content;
+        display: inline-block;
+        color: var(--color-bg);
+        padding: 0.4rem 0.5rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        border: 1px solid var(--color-bg);
+        transition: var(--transition);
+    }
+    .btns2b:hover{
+        background-color: transparent;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    @include media('<=tablet'){
+        .super2{
+            font-size: 15px;
+        }
+        .download2{
+            padding-left: 10rem;
+        }
+    }
