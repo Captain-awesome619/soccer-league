@@ -8,7 +8,7 @@ align-items: center;
 padding: 1rem;
 margin-top: 1rem;
 background-color: orange;
-width: 110%;
+width: 170%;
 }
 
 .button3{
@@ -22,11 +22,12 @@ width: 110%;
     transition: var(--transition);
     align-items: center;
     justify-content: center;
-    margin-left: 7rem;
+    margin-left: 1rem;
+    margin-right: 40%;
 }
 
 .button3>h4{
-    color: var(--color-bg-variant);
+    color: var(--color-bg);
 }
 
 .button3:hover{
@@ -37,7 +38,7 @@ width: 110%;
 
 .Get>h4{
     color: var(--color-bg);
-    margin-right: 1rem;
+    margin-left: 0%;
 }
 
 
@@ -48,13 +49,27 @@ width: 110%;
 
 
 @include media('<=tablet'){
+    .Get{
+
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
     .Get>h4{
-margin-right: 0rem;
-padding: 0rem;
-    }
-    .button3{
-        margin-left: 1rem;
-        padding: 0.3rem 0.7rem;
-        margin-right: 0.5rem;
-    }
+margin-left: 0%;
+padding-left: 0%;
+font-size: 14px;
+            }
+            .button3{
+                margin-left: 0.5rem;
+                padding: 0.3rem 0.7rem;
+                margin-right: 20%;
+            }
+
+}
+
+
+@include media('>tablet','<=desktop') {
+
+
+    
 }
