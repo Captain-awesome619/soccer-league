@@ -98,7 +98,7 @@ position: relative;
 
 @include media('<=tablet'){
     .sec{
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     .title{
         margin-bottom: 1.5rem;

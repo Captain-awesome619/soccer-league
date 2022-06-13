@@ -3,7 +3,7 @@
 .brand{
     position: relative;
     cursor: pointer;
-   left: 35%;
+   margin-left: 2rem;
     margin-top: 10px;
 }
 
@@ -25,7 +25,10 @@ span {
 
 @include media ('<=tablet'){
     .brand{
-left: 5%;
+margin-left: 0.5rem;
+    }
+    span{
+        padding: 5px;
     }
 }
 

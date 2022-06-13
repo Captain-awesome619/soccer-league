@@ -5,6 +5,7 @@
 max-height: 500px;
     border-radius: 0% 0% 30% 30%;
 
+
 }
 
 
@@ -160,9 +161,13 @@ top: 0%;
 @include media('<=tablet'){
     .starter{
        max-height:  350px;
+       margin-bottom: 0rem;
     }
     .download{
-        padding-left: 5rem;
+        padding-left: 4.5rem;
+    }
+    .stat{
+        margin-top: 0.5rem;
     }
     .super{
         font-size: 25px;
@@ -181,8 +186,12 @@ padding-bottom: 0rem;
 margin-bottom: 0rem;
 }
 .ctaa{
+    padding-top: 2.5rem;
     margin-top: 0rem;
 left: 0%;
+}
+.cta{
+    margin-left: 2rem;
 }
 
 
